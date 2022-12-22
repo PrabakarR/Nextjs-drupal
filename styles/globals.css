@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+    @apply px-4 mx-auto max-w-7xl sm:px-6 lg:px-8;
+}
+.h3{
+    @apply mb-2 text-2xl font-bold;
+}
+
+.wrap-articles > *{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+.border-not-first > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-y-reverse: 0;
+    border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+    border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+    --tw-divide-opacity: 1;
+    border-color: rgb(226 232 240);
+}
+.ib svg{
+    height: 1rem;
+    width: auto;
+    --tw-text-opacity: 1;
+    color: rgba(212, 212, 216, var(--tw-text-opacity));
+}
