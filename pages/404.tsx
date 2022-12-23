@@ -1,15 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link';
-import { useEffect } from "react";
-import { useRouter } from "next/router";
 import { Layout } from "components/layout"
 const  PageNotFound = () =>{
-    const router = useRouter()
-    useEffect(() => {
-       setTimeout(()=>{
-         router.push("/")
-       },5000)
-    },[])
     return (
         <Layout>
         <Head>

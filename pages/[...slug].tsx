@@ -87,13 +87,11 @@ export async function getStaticProps(
           }
           status
           created
-          mediaImage {
-            mediaImage {
+          image {
              url
              width
              height
             }
-          }
         }
         ... on NodePage {
           __typename

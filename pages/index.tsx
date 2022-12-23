@@ -68,13 +68,11 @@ export async function getStaticProps(
               processed
             }
             created
-            mediaImage {
-              mediaImage {
-                url
-                width
-                height
-              }
-            }
+            image {
+              url
+              width
+              height
+             }
            }
         }
       }
