@@ -9,11 +9,11 @@ interface NodeArticleTeaserProps {
 }
 
 export function NodeArticleTeaser({ node, ...props }: NodeArticleTeaserProps) {
-  const imageURL = node.image.url
+  const imageURL = node.mediaImage.mediaImage.url
   return (
     <article className="flex items-center grow" {...props}>
       <Link href={node.path} className="flex shrink-0 overflow-hidden rounded-md">
-      {node.image && (
+      {node.mediaImage && (
           <Image
             src={imageURL}
             width={150}

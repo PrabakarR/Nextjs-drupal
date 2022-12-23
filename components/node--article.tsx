@@ -8,7 +8,7 @@ interface NodeArticleProps {
 }
 
 export function NodeArticle({ node, ...props }: NodeArticleProps) {
-  const imageURL = node.image.url
+  const imageURL = node.mediaImage.mediaImage.url
   return (
     <div className="mx-auto max-w-4xl">
  <article {...props}>
@@ -22,7 +22,7 @@ export function NodeArticle({ node, ...props }: NodeArticleProps) {
         ) : null}
         <span> - {formatDate(node.created)}</span>
       </div>
-      {node.image && (
+      {node.mediaImage && (
         <figure className="my-4 overflow-hidden rounded-md">
           <Image
             src={imageURL}
